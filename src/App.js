@@ -1,22 +1,17 @@
 import './App.css';
-import Button from './components/Button/Button';
+import CounterContainer from './components/CounterContainer/CounterContainer';
 
 function App() {
+
   return (
     <div className='app'>
       <header className='header'>
         <h1 className='titleApp' alt='title'>Counter</h1>
       </header>
-      <div>
-        <Button
-          text='Click'
-          isClickButton={true}
-        />
-        <Button
-          text='Restart'
-          isClickButton={false}
-        />
-      </div>
+      <CounterContainer />
+      <footer>
+        <span>Developed by Mariam Viera Amado</span>
+      </footer>
     </div>
   );
 }
